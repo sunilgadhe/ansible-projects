@@ -9,7 +9,7 @@
       state: absent   #Use touch to create file
       owner: paul
       group: paul
-      mode: u=rwx,g=rw,o=r
+      mode: u=rwx,g=rw,o=r    # 0644 Optional: sets file permissions
 
   - name: Creating a directory
     file:
