@@ -7,4 +7,4 @@
     user:
       name: nick
       update_password: always
-      password: "{{'abcd12345' | password_hash('sha512', 'mysecretcode')}}"
+      password: "{{'abcd12345' | password_hash('sha512', 'mysecretcode')}}" #| password_hash('sha512', 'mysecretcode'): This is a Jinja2 filter used to hash the password. The filter applies SHA-512 hashing with a salt of mysecretcode, ensuring that the stored password is secure.
