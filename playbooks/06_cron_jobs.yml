@@ -13,4 +13,4 @@
       weekday: "*"
       user: paul
       job: /tmp/script/test.sh
-      disabled: yes
+      disabled: yes  #This parameter disables the cron job without deleting it. It will still exist in the cron configuration but will not run until it is enabled. This is useful if you want to set up the job in advance but hold off on running it.
