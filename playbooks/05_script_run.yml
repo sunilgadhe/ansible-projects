@@ -6,5 +6,5 @@
   - name: Run script
     shell: ./test.sh >> test.log
     args:
-      chdir: /tmp/script/
+      chdir: /tmp/script/  #To chnage dir before running script
       creates: test.log
