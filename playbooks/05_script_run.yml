@@ -7,4 +7,4 @@
     shell: ./test.sh >> test.log
     args:
       chdir: /tmp/script/  #To chnage dir before running script
-      creates: test.log
+      creates: test.log  #This parameter checks if test.log exists before running the task. If test.log already exists, the task will be skipped.
